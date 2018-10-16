@@ -1,1 +1,109 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><link rel="stylesheet" href="./css/style.css"><script src="./js/script.js"></script><title>José Alves</title></head><body><header><a href="./index.html" tabindex="1"><h1>José Alves</h1></a><hr><nav id="dropdown"><ul><li><a href="#sobre">Sobre</a></li></ul><ul><li>Hobbies</li><li><a href="#fotografia">Fotografia</a></li><li><a href="#leitura">Leitura</a></li><li><a href="#cinema">Cinema</a></li></ul><ul><li><a href="#contato">Contato</a></li></ul></nav></header><main><div id="bg-sobre" class="bg-section"></div><div id="bg-fotografia" class="bg-section invisible"></div><div id="bg-leitura" class="bg-section invisible"></div><div id="bg-cinema" class="bg-section invisible"></div><div id="bg-contato" class="bg-section invisible"></div><section class="secao" id="sobre"><h2>Sobre</h2><p>Desenvolvedor Web com experiência no uso de tecnologias que circundam o ecossistema Java (JUnit, Selenium, JSF, JSP, Hibernate, Spring), Bancos de Dados relacionais (PostgreSQL e MYSQL) / não relacionais (MongoDB) e FrontEnd (HTML, CSS3, Javascript, Gulp, Sass, JQuery, Bootstrap).</p></section><section class="secao" id="fotografia"><h2>Fotografia</h2><ul id="galeria"><li><img src="./img/fotografia/praca-correio.jpg" alt="Praça do Correio (São Paulo)"></li><li><img src="./img/fotografia/pico-jaragua.jpg" alt="Pico do Jaraguá (São Paulo)"></li><li><img src="./img/fotografia/templo-zulai.jpg" alt="Templo Zulai (Cotia)"></li></ul></section><section class="secao" id="leitura"><h2>Leitura</h2><p>Últimos livros lidos</p><ul><li>O Simbolo Perdido (Dan Brown)</li><li>O Chefão (Mario Puzo)</li><li>Ratos e Homens (John Steinbeck)</li><li>Precisamos Falar Sobre Kevin (Lionel Shriver)</li><li>Musashi (Eiji Yoshikawa)</li></ul></section><section class="secao" id="cinema"><h2>Cinema</h2><div><p>Úlitmos filmes vistos</p><ul><li>Hostiles</li><li>You Were Never Really Here</li><li>Martha Marcy May Marlene</li><li>You Were Never Really Here</li><li>O Rei do Show</li></ul></div><div><p>Alguns posts que escrevi sobre cinema</p><ul><li><a href="https://www.minhavisaodocinema.com.br/2017/10/critica-ghost-story-2017-de-david-lowery.html" target="_blank">Crítica de A Ghost Story, de David Lowery</a></li><li><a href="https://www.minhavisaodocinema.com.br/2017/08/critica-luke-cage-2016-de-cheo-hodari.html" target="_blank">Crítica da 1ª temporada de Luke Cage</a></li><li><a href="https://minhavisaodocinema.blogspot.com.br/2017/11/especial-lista-de-filmes-para-ver-no.html" target="_blank">Lista de filmes para ver no Dia da Consciência Negra</a></li></ul></div></section><section class="secao" id="contato"><h2>Contato</h2><!-- <h3>Redes Sociais</h3> --><ul id="redes"><li><a href="https://www.facebook.com/jose.alves.581" id="facebook" target="_blank" aria-label="Facebook"></a></li><li><a href="https://twitter.com/Jose_AlvesNT" id="twitter" target="_blank" aria-label="Twitter"></a></li><li><a href="https://www.linkedin.com/in/jos%C3%A9-alves-de-souza-neto-909a1838" id="linkedin" target="_blank" aria-label="Linkedin"></a></li><li><a href="https://plus.google.com/u/0/113638190041836558009" id="gplus" target="_blank" aria-label="Google+"></a></li></ul></section><a href="#" id="btn-voltar" aria-label="início"></a></main><footer></footer></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <title>José Alves</title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html" tabindex="1">
+            <h1>José Alves</h1>
+        </a>
+        <hr>
+        <nav id="dropdown">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+            <ul style="display:none;">
+                <li>Hobbies</li>
+                <li><a href="#fotografia">Fotografia</a></li>
+                <li><a href="#leitura">Leitura</a></li>
+                <li><a href="#cinema">Cinema</a></li>
+            </ul>
+            <ul>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="bg-sobre" class="bg-section"></div>
+        <div id="bg-fotografia" class="bg-section invisible" style="display:none;"></div>
+        <div id="bg-leitura" class="bg-section invisible" style="display:none;"></div>
+        <div id="bg-cinema" class="bg-section invisible" style="display:none;"></div>
+        <div id="bg-contato" class="bg-section invisible"></div>
+        <section class="secao" id="sobre">
+            <h2>Sobre</h2>
+            <p>Desenvolvedor Web com experiência no uso de tecnologias que circundam o ecossistema Java (JUnit, Selenium, JSF, JSP, Hibernate, Spring), Bancos de Dados relacionais (PostgreSQL e MYSQL) / não relacionais (MongoDB) e FrontEnd (HTML, CSS3, Javascript,
+                Gulp, Sass, JQuery, Bootstrap).</p>
+        </section>
+        <section class="secao" id="fotografia" style="display:none;">
+            <h2>Fotografia</h2>
+            <ul id="galeria">
+                <li><img src="./img/fotografia/praca-correio.jpg" alt="Praça do Correio (São Paulo)"></li>
+                <li><img src="./img/fotografia/pico-jaragua.jpg" alt="Pico do Jaraguá (São Paulo)"></li>
+                <li><img src="./img/fotografia/templo-zulai.jpg" alt="Templo Zulai (Cotia)"></li>
+            </ul>
+        </section>
+        <section class="secao" id="leitura" style="display:none;">
+            <h2>Leitura</h2>
+            <p>Últimos livros lidos</p>
+            <ul>
+                <li>O Simbolo Perdido (Dan Brown)</li>
+                <li>O Chefão (Mario Puzo)</li>
+                <li>Ratos e Homens (John Steinbeck)</li>
+                <li>Precisamos Falar Sobre Kevin (Lionel Shriver)</li>
+                <li>Musashi (Eiji Yoshikawa)</li>
+            </ul>
+        </section>
+        <section class="secao" id="cinema" style="display:none;">
+            <h2>Cinema</h2>
+            <div style="display:none;">
+                <p>Úlitmos filmes vistos</p>
+                <ul>
+                    <li>Hostiles</li>
+                    <li>You Were Never Really Here</li>
+                    <li>Martha Marcy May Marlene</li>
+                    <li>You Were Never Really Here</li>
+                    <li>O Rei do Show</li>
+                </ul>
+            </div>
+            <div>
+                <p>Alguns posts que escrevi sobre cinema</p>
+                <ul>
+                    <li><a href="https://www.minhavisaodocinema.com.br/2017/10/critica-ghost-story-2017-de-david-lowery.html" target="_blank">Crítica de A Ghost Story, de David Lowery</a></li>
+                    <li><a href="https://www.minhavisaodocinema.com.br/2017/08/critica-luke-cage-2016-de-cheo-hodari.html" target="_blank">Crítica da 1ª temporada de Luke Cage</a></li>
+                    <li><a href="https://minhavisaodocinema.blogspot.com.br/2017/11/especial-lista-de-filmes-para-ver-no.html" target="_blank">Lista de filmes para ver no Dia da Consciência Negra</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="secao" id="contato">
+            <h2>Contato</h2>
+            <!-- <h3>Redes Sociais</h3> -->
+            <ul id="redes">
+                <li>
+                    <a href="https://www.facebook.com/jose.alves.581" id="facebook" target="_blank" aria-label="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Jose_AlvesNT" id="twitter" target="_blank" aria-label="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/jos%C3%A9-alves-de-souza-neto-909a1838" id="linkedin" target="_blank" aria-label="Linkedin"></a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/u/0/113638190041836558009" id="gplus" target="_blank" aria-label="Google+"></a>
+                </li>
+            </ul>
+        </section>
+        <a href="#" id="btn-voltar" aria-label="início"></a>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
